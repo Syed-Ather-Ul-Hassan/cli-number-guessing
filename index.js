@@ -4,7 +4,7 @@ import inquirer from "inquirer";
 // 2) User input for guessing number - Done.
 // 3) Compare user input with computer generated number to show result - Done
 const randomNumber = Math.floor(Math.random() * 6 + 1);
-console.log(randomNumber);
+console.log("Welcome to Number Guessing Game");
 const answer = await inquirer.prompt([
     {
         name: "userGuessNumber",
@@ -12,7 +12,6 @@ const answer = await inquirer.prompt([
         message: "Please guess a number between 1-6: ",
     },
 ]);
-console.log(answer);
 if (answer.userGuessNumber === randomNumber) {
     console.log("Congratulations!you guessed right number.");
 }

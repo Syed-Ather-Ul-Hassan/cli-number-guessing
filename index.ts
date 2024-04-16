@@ -11,7 +11,7 @@ import inquirer from "inquirer";
 
 const randomNumber = Math.floor(Math.random() * 6 + 1);
 console.log("Welcome to Number Guessing Game")
-console.log(randomNumber);
+
 const answer = await inquirer.prompt([
     {
         name: "userGuessNumber",
@@ -20,7 +20,7 @@ const answer = await inquirer.prompt([
     },
 ]);
 
-console.log(answer);
+
 if(answer.userGuessNumber === randomNumber){
     console.log("Congratulations!you guessed right number.")
 } else {
