@@ -1,4 +1,4 @@
-#! /use/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 // 1) Computer will generate a random number - Done.
 // 2) User input for guessing number - Done.
